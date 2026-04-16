@@ -9,7 +9,7 @@ public class User {
 
     public User(String username, String password) throws IllegalArgumentException {
         // check length before format so we give the more specific error
-        if (usernamez.length() > 50) {
+        if (username.length() > 50) {
             throw new IllegalArgumentException("Username is too long, try something shorter");
         }
         if (!username.matches(EMAIL_REGEX)) {
